@@ -2,55 +2,51 @@
 
 ## Current Technical Stack
 
-- **On-Premise Active Directory**
-- **AWS Server Management**
 - **AWS Automation**
-- **AWS Lambda**
-- **AWS Systems Management**
 - **AWS Code Writing**
+- **AWS Lambda**
+- **AWS Server Management**
+- **AWS Systems Management**
 - **Azure AD (Hybrid and Cloud Only combined)**
-- **Fortigate Firewalls and VPN**
-- **Intune MDM (Windows, iOS, Android, Mac)**
-- **Quick Assist and VNC Viewer/Server (remote management)**
-- **SSO Management using Azure**
 - **Azure MFA**
-- **DUO MFA**
-- **Microsoft O365**
-- **Microsoft Exchange**
 - **Backupify**
-- **VMware/Vsphere**
-- **Sharepoint Admin and Security**
 - **Certificate Management**
-- **Windows 10/11 and 11 Implementation**
 - **Cisco Switches and Vlan management**
+- **Cisco, UCCX/Finesse administration and Reporting**
+- **DUO MFA**
+- **Fortigate Firewalls and VPN**
+- **Google Workspace**
+- **Identity & Access Management/Federation experience with CA SiteMinder/IdentityMinder, IBM Identity and Access Manager, Oracle Access Manager**
+- **Intune MDM (Windows, iOS, Android, Mac)**
+- **JAMF**
+- **Jira**
 - **LastPass**
+- **ManageEngine**
+- **Microsoft Exchange**
+- **Microsoft O365**
 - **MimeCast**
+- **OKTA**
+- **On-Premise Active Directory**
+- **PingFederate, PingDirectory, PingAccess, PingOne, PingID**
 - **Powershell Scripting**
+- **Quick Assist and VNC Viewer/Server (remote management)**
+- **RSA SecureID**
+- **SCCM**
+- **SSO Management using Azure**
 - **SQL**
 - **Samsung Knox**
-- **ManageEngine**
-- **Verizon Portal Management**
-- **RSA SecureID**
-- **Cisco, UCCX/Finesse administration and Reporting**
-- **Identity & Access Management/Federation experience with CA SiteMinder/IdentityMinder, IBM Identity and Access Manager, Oracle Access Manager**
-- **PingFederate, PingDirectory, PingAccess, PingOne, PingID**
-- **User Provisioning (SCIM)**
-- **SCCM**
 - **SharePoint**
-- **Jira**
-- **JAMF**
-- **Wondera**
-- **Slack**
-- **Google Workspace**
-- **Ticketing Systems (Remedy, Service Now, SalesForce, Cherwell, Footprints. RemedyForce, TrackIT, SpiceWorks, Zendesk)**
-- **Identity & Access Management/Federation experience with CA SiteMinder/IdentityMinder, IBM Identity and Access Manager, Oracle Access Manager**
-- **PingFederate, PingDirectory, PingAccess, PingOne, PingID**
-- **User Provisioning (SCIM)**
+- **Sharepoint Admin and Security**
 - **Single Sign On (SAML, OAuth, OpenID & WS-FED)**
-- **OKTA**
+- **Slack**
 - **Sophos Endpoint, CloudOptix, Email**
 - **TensorFLow LLM AI Model Training**
-
+- **Ticketing Systems (Remedy, Service Now, SalesForce, Cherwell, Footprints. RemedyForce, TrackIT, SpiceWorks, Zendesk)**
+- **User Provisioning (SCIM)**
+- **Verizon Portal Management**
+- **VMware/Vsphere**
+- **Windows 10/11 and 11 Implementation**
+- **Wondera**
 
 ## Skills
 
