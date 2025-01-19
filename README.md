@@ -1,16 +1,87 @@
-## Hi there 👋
+# James Morales
 
-<!--
-**Jamesmorales76/Jamesmorales76** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Current Technical Stack
 
-Here are some ideas to get you started:
+- **On-Premise Active Directory**
+- **AWS Server Management**
+- **AWS Automation**
+- **AWS Lambda**
+- **AWS Systems Management**
+- **AWS Code Writing**
+- **Azure AD (Hybrid and Cloud Only combined)**
+- **Fortigate Firewalls and VPN**
+- **Intune MDM (Windows, iOS, Android, Mac)**
+- **Quick Assist and VNC Viewer/Server (remote management)**
+- **SSO Management using Azure**
+- **Azure MFA**
+- **DUO MFA**
+- **Microsoft O365**
+- **Microsoft Exchange**
+- **Backupify**
+- **VMware/Vsphere**
+- **Sharepoint Admin and Security**
+- **Certificate Management**
+- **Windows 10/11 and 11 Implementation**
+- **Cisco Switches and Vlan management**
+- **LastPass**
+- **MimeCast**
+- **Powershell Scripting**
+- **SQL**
+- **Samsung Knox**
+- **ManageEngine**
+- **Verizon Portal Management**
+- **RSA SecureID**
+- **Cisco, UCCX/Finesse administration and Reporting**
+- **Identity & Access Management/Federation experience with CA SiteMinder/IdentityMinder, IBM Identity and Access Manager, Oracle Access Manager**
+- **PingFederate, PingDirectory, PingAccess, PingOne, PingID**
+- **User Provisioning (SCIM)**
+- **SCCM**
+- **SharePoint**
+- **Jira**
+- **JAMF**
+- **Wondera**
+- **Slack**
+- **Google Workspace**
+- **Ticketing Systems (Remedy, Service Now, SalesForce, Cherwell, Footprints. RemedyForce, TrackIT, SpiceWorks, Zendesk)**
+- **Identity & Access Management/Federation experience with CA SiteMinder/IdentityMinder, IBM Identity and Access Manager, Oracle Access Manager**
+- **PingFederate, PingDirectory, PingAccess, PingOne, PingID**
+- **User Provisioning (SCIM)**
+- **Single Sign On (SAML, OAuth, OpenID & WS-FED)**
+- **OKTA**
+- **Sophos Endpoint, CloudOptix, Email**
+- **TensorFLow LLM AI Model Training**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+## Skills
+
+- **PKI, X.509 certificates and Kerberos**
+- **Multi-Factor Authentication (PingID, SecurID, DUO, Azure)**
+- **Cloud Services such as Azure, O365, AWS**
+- **Migration from ManageEngine to Intune**
+- **Using Intune Autopilot to push MDM for ManageEngine**
+- **ITIL V4**
+- **Active Directory including Azure and LDAP**
+- **O365 Including Exchange**
+- **Training**
+- **Leadership**
+- **Process Improvement**
+- **Change Management**
+- **Talent Management**
+- **Public Speaking**
+- **Time Management**
+- **Remote Assistance Tools**
+- **Customer Service**
+- **Databases: Oracle, Access, SQL**
+- **SAS**
+- **Network Troubleshooting**
+- **IE, Chrome, Firefox**
+- **Java**
+- **SCCM**
+- **SharePoint**
+- **Jira**
+- **JAMF**
+- **Wondera**
+- **Slack**
+- **Google Workspace**
+- **Hubble Reporting**
+- **Asset Management**
