@@ -50,34 +50,34 @@
 
 ## Skills
 
-- **PKI, X.509 certificates and Kerberos**
-- **Multi-Factor Authentication (PingID, SecurID, DUO, Azure)**
-- **Cloud Services such as Azure, O365, AWS**
-- **Migration from ManageEngine to Intune**
-- **Using Intune Autopilot to push MDM for ManageEngine**
-- **ITIL V4**
 - **Active Directory including Azure and LDAP**
-- **O365 Including Exchange**
-- **Training**
-- **Leadership**
-- **Process Improvement**
+- **Asset Management**
 - **Change Management**
-- **Talent Management**
-- **Public Speaking**
-- **Time Management**
-- **Remote Assistance Tools**
+- **Cloud Services such as Azure, O365, AWS**
 - **Customer Service**
 - **Databases: Oracle, Access, SQL**
-- **SAS**
-- **Network Troubleshooting**
-- **IE, Chrome, Firefox**
-- **Java**
-- **SCCM**
-- **SharePoint**
-- **Jira**
-- **JAMF**
-- **Wondera**
-- **Slack**
 - **Google Workspace**
 - **Hubble Reporting**
-- **Asset Management**
+- **IE, Chrome, Firefox**
+- **ITIL V4**
+- **JAMF**
+- **Java**
+- **Jira**
+- **Leadership**
+- **Migration from ManageEngine to Intune**
+- **Multi-Factor Authentication (PingID, SecurID, DUO, Azure)**
+- **Network Troubleshooting**
+- **O365 Including Exchange**
+- **PKI, X.509 certificates and Kerberos**
+- **Process Improvement**
+- **Public Speaking**
+- **Remote Assistance Tools**
+- **SAS**
+- **SCCM**
+- **SharePoint**
+- **Slack**
+- **Talent Management**
+- **Time Management**
+- **Training**
+- **Google Workspace**
+- **Hubble Reporting**
