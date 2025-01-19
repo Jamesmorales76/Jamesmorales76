@@ -1,0 +1,185 @@
+//Example AI project built using VSCode and Python programming language
+
+// AI Travel Agent Chatbot Application
+
+// Importing necessary libraries and APIs
+import { getWeather, getCurrentLocation, functions } from './tools.js';
+
+// OpenAI API Key
+const OPENAI_API_KEY = 'API_KEY';
+// Weather API Key (e.g., OpenWeatherMap)
+const WEATHER_API_KEY = 'WEATHER_API_KEY';
+
+// Mock function to search flights
+async function searchFlights(from, destination, airline) {
+    // Mock data for flights
+    return [
+        { airline: 'United', from: from, to: destination, price: 300 },
+        { airline: 'Delta', from: from, to: destination, price: 320 },
+        { airline: 'American Airlines', from: from, to: destination, price: 350 },
+        { airline: 'Southwest', from: from, to: destination, price: 280 },
+        { airline: 'United', from: from, to: destination, price: 310 }
+    ];
+}
+
+// Mock function to search hotels
+async function searchHotels(destination, hotelChain) {
+    // Mock data for hotels
+    return [
+        { name: 'Marriott', location: destination, price: 150 },
+        { name: 'Hilton', location: destination, price: 160 },
+        { name: 'Hyatt', location: destination, price: 170 },
+        { name: 'Holiday Inn', location: destination, price: 140 },
+        { name: 'Marriott', location: destination, price: 155 }
+    ];
+}
+
+// Function to get activities based on location and weather
+async function getActivities(location, weatherCondition) {
+    try {
+        const prompt = `Suggest activities in ${location} for weather condition: ${weatherCondition}.`;
+        const response = await axios.post('https://api.openai.com/v1/completions', {
+            model: 'text-davinci-003',
+            prompt: prompt,
+            max_tokens: 150
+        }, {
+            headers: {
+                'Authorization': `Bearer ${OPENAI_API_KEY}`,
+                'Content-Type': 'application/json'
+            }
+        });
+
+        return response.data.choices[0].text.trim();
+    } catch (error) {
+        console.error('Error fetching activities:', error);
+        return 'Error fetching activities.';
+    }
+}
+
+// Function to handle user input and generate responses
+async function handleUserInput() {
+    const messagesContainer = document.getElementById('messages');
+
+    const from = await getCurrentLocation();
+    const destination = document.getElementById('destination').value;
+    const travelers = document.getElementById('travelers').value;
+    const airline = document.getElementById('airline').value;
+    const hotel = document.getElementById('hotel').value;
+    const budget = document.getElementById('budget').value;
+
+    const flights = await searchFlights(from, destination, airline);
+    const hotels = await searchHotels(destination, hotel);
+    const weather = await getWeather(destination, WEATHER_API_KEY);
+    const activities = await getActivities(destination, weather.weather);
+
+    const botResponse = `Planning your route from ${from} to ${destination} for ${travelers} travelers with ${airline} airline, staying at ${hotel}, and a budget of $${budget}.<br><br>
+    <strong>Current Weather in ${destination}:</strong> ${weather.temperature}°F with ${weather.weather}.<br><br>
+    <strong>Suggested Activities:</strong> ${activities}<br><br>
+    <strong>Top 5 Flights:</strong><br>
+    ${flights.map(flight => `${flight.airline} from ${flight.from} to ${flight.to} for $${flight.price} <button class="book-flight" data-airline="${flight.airline}" data-from="${flight.from}" data-to="${flight.to}" data-price="${flight.price}">Book Now</button>`).join('<br>')}<br><br>
+    <strong>Top 5 Hotels:</strong><br>
+    ${hotels.map(hotel => `${hotel.name} in ${hotel.location} for $${hotel.price}/night <button class="book-hotel" data-name="${hotel.name}" data-location="${hotel.location}" data-price="${hotel.price}">Book Now</button>`).join('<br>')}`;
+
+    // Display bot response
+    const botMessage = document.createElement('div');
+    botMessage.className = 'message bot-message';
+    botMessage.innerHTML = botResponse;
+    messagesContainer.appendChild(botMessage);
+
+    // Scroll to the bottom of the chat
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+}
+
+// Function to handle booking flights
+function bookFlight(airline, from, to, price) {
+    const messagesContainer = document.getElementById('messages');
+    const bookingMessage = document.createElement('div');
+    bookingMessage.className = 'message bot-message';
+    bookingMessage.innerHTML = `Booking flight with ${airline} from ${from} to ${to} for $${price}. Booking complete!`;
+    messagesContainer.appendChild(bookingMessage);
+}
+
+// Function to handle booking hotels
+function bookHotel(name, location, price) {
+    const messagesContainer = document.getElementById('messages');
+    const bookingMessage = document.createElement('div');
+    bookingMessage.className = 'message bot-message';
+    bookingMessage.innerHTML = `Booking hotel ${name} in ${location} for $${price}/night. Booking complete!`;
+    messagesContainer.appendChild(bookingMessage);
+}
+
+// Initialize the chatbot
+function initializeChatbot() {
+    const messagesContainer = document.getElementById('messages');
+
+    // Display greeting message with input fields
+    const greetingMessage = document.createElement('div');
+    greetingMessage.className = 'message bot-message';
+    greetingMessage.innerHTML = `Hello! I'm your AI Travel Agent. How can I assist you today?<br>
+    Please provide the following details:<br>
+    <div class="input-group">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" placeholder="Enter your destination" />
+    </div>
+    <div class="input-group">
+        <label for="travelers">Number of travelers:</label>
+        <button id="decrease-travelers">-</button>
+        <input type="number" id="travelers" value="1" min="1" />
+        <button id="increase-travelers">+</button>
+    </div>
+    <div class="input-group">
+        <label for="airline">Preferred airline:</label>
+        <select id="airline">
+            <option value="United">United</option>
+            <option value="Delta">Delta</option>
+            <option value="American Airlines">American Airlines</option>
+            <option value="Southwest">Southwest</option>
+        </select>
+    </div>
+    <div class="input-group">
+        <label for="hotel">Preferred hotel chain:</label>
+        <select id="hotel">
+            <option value="Marriott">Marriott</option>
+            <option value="Hilton">Hilton</option>
+            <option value="Hyatt">Hyatt</option>
+            <option value="Holiday Inn">Holiday Inn</option>
+        </select>
+    </div>
+    <div class="input-group">
+        <label for="budget">Budget:</label>
+        <input type="number" id="budget" placeholder="Enter your budget" />
+    </div>
+    <button id="send-button">Plan my route</button>`;
+    messagesContainer.appendChild(greetingMessage);
+
+    // Add event listeners for the input fields and button
+    document.getElementById('decrease-travelers').addEventListener('click', () => {
+        const travelersInput = document.getElementById('travelers');
+        if (travelersInput.value > 1) {
+            travelersInput.value--;
+        }
+    });
+
+    document.getElementById('increase-travelers').addEventListener('click', () => {
+        const travelersInput = document.getElementById('travelers');
+        travelersInput.value++;
+    });
+
+    document.getElementById('send-button').addEventListener('click', () => {
+        handleUserInput();
+    });
+
+    // Event delegation for booking flights and hotels
+    messagesContainer.addEventListener('click', (event) => {
+        if (event.target.classList.contains('book-flight')) {
+            const { airline, from, to, price } = event.target.dataset;
+            bookFlight(airline, from, to, price);
+        } else if (event.target.classList.contains('book-hotel')) {
+            const { name, location, price } = event.target.dataset;
+            bookHotel(name, location, price);
+        }
+    });
+}
+
+// Initialize the app
+window.onload = initializeChatbot;
