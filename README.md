@@ -57,7 +57,7 @@
 - **Customer Service**
 - **Databases: Oracle, Access, SQL**
 - **Google Workspace**
-- **Hubble Reporting**
+- **Hubble/Netaspi Asset management/Reporting and Security solution**
 - **IE, Chrome, Firefox**
 - **ITIL V4**
 - **JAMF**
@@ -79,5 +79,3 @@
 - **Talent Management**
 - **Time Management**
 - **Training**
-- **Google Workspace**
-- **Hubble Reporting**
