@@ -1,81 +1,27 @@
 # James Morales
 
-## Current Technical Stack
+Infrastructure, identity and automation engineer. I automate AWS and endpoint management and run identity and access across hybrid environments.
 
-- **AWS Automation**
-- **AWS Code Writing**
-- **AWS Lambda**
-- **AWS Server Management**
-- **AWS Systems Management**
-- **Azure AD (Hybrid and Cloud Only combined)**
-- **Azure MFA**
-- **Backupify**
-- **Certificate Management**
-- **Cisco Switches and Vlan management**
-- **Cisco, UCCX/Finesse administration and Reporting**
-- **DUO MFA**
-- **Fortigate Firewalls and VPN**
-- **Google Workspace**
-- **Identity & Access Management/Federation experience with CA SiteMinder/IdentityMinder, IBM Identity and Access Manager, Oracle Access Manager**
-- **Intune MDM (Windows, iOS, Android, Mac)**
-- **JAMF**
-- **Jira**
-- **LastPass**
-- **ManageEngine**
-- **Microsoft Exchange**
-- **Microsoft O365**
-- **MimeCast**
-- **OKTA**
-- **On-Premise Active Directory**
-- **PingFederate, PingDirectory, PingAccess, PingOne, PingID**
-- **Powershell Scripting**
-- **Quick Assist and VNC Viewer/Server (remote management)**
-- **RSA SecureID**
-- **SCCM**
-- **SSO Management using Azure**
-- **SQL**
-- **Samsung Knox**
-- **SharePoint**
-- **Sharepoint Admin and Security**
-- **Single Sign On (SAML, OAuth, OpenID & WS-FED)**
-- **Slack**
-- **Sophos Endpoint, CloudOptix, Email**
-- **TensorFLow LLM AI Model Training**
-- **Ticketing Systems (Remedy, Service Now, SalesForce, Cherwell, Footprints. RemedyForce, TrackIT, SpiceWorks, Zendesk)**
-- **User Provisioning (SCIM)**
-- **Verizon Portal Management**
-- **VMware/Vsphere**
-- **Windows 10/11 and 11 Implementation**
-- **Wondera**
+## Featured projects
 
-## Skills
+- [aws-ssm-agent-automation](https://github.com/Jamesmorales76/aws-ssm-agent-automation): EventBridge, Lambda and SSM install security and monitoring agents on new EC2 instances, Linux and Windows
+- [media-mcp-server](https://github.com/Jamesmorales76/media-mcp-server): MCP server with 78 tools for controlling a self-hosted media and storage stack, with auth and TLS hardening
+- [home-assistant-automations](https://github.com/Jamesmorales76/home-assistant-automations): peak-hour-aware climate control for a smart home
 
-- **Active Directory including Azure and LDAP**
-- **Asset Management**
-- **Change Management**
-- **Cloud Services such as Azure, O365, AWS**
-- **Customer Service**
-- **Databases: Oracle, Access, SQL**
-- **Google Workspace**
-- **Hubble/Netaspi Asset management/Reporting and Security solution**
-- **IE, Chrome, Firefox**
-- **ITIL V4**
-- **JAMF**
-- **Java**
-- **Jira**
-- **Leadership**
-- **Migration from ManageEngine to Intune**
-- **Multi-Factor Authentication (PingID, SecurID, DUO, Azure)**
-- **Network Troubleshooting**
-- **O365 Including Exchange**
-- **PKI, X.509 certificates and Kerberos**
-- **Process Improvement**
-- **Public Speaking**
-- **Remote Assistance Tools**
-- **SAS**
-- **SCCM**
-- **SharePoint**
-- **Slack**
-- **Talent Management**
-- **Time Management**
-- **Training**
+## Technical stack
+
+**Cloud and automation:** AWS (Lambda, Systems Manager, server management, automation), PowerShell, SQL, Java, TensorFlow model training
+
+**Identity and access:** Azure AD (hybrid and cloud-only), Azure MFA, Okta, PingFederate / PingDirectory / PingAccess / PingOne / PingID, Duo, RSA SecurID, CA SiteMinder / IdentityMinder, IBM Identity and Access Manager, Oracle Access Manager, SSO (SAML, OAuth, OpenID, WS-Fed), SCIM provisioning, on-premises Active Directory, PKI / X.509 / Kerberos, certificate management
+
+**Endpoint and device management:** Intune (Windows, iOS, Android, Mac), JAMF, SCCM, ManageEngine, Samsung Knox, Windows 10/11 deployment, Quick Assist and VNC
+
+**Email, collaboration and security:** Microsoft 365, Exchange, SharePoint (admin and security), Google Workspace, Slack, Mimecast, Sophos, Backupify, LastPass
+
+**Network and infrastructure:** Cisco switches and VLANs, Cisco UCCX/Finesse, FortiGate firewalls and VPN, VMware vSphere
+
+**Service management:** Jira, ITIL v4, change and asset management, Remedy, ServiceNow, Salesforce, Cherwell, Zendesk and others
+
+## Highlights
+
+- Led a migration from ManageEngine to Intune
